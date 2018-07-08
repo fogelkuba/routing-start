@@ -17,10 +17,10 @@ export class EditServerComponent implements OnInit {
               private route: ActivatedRoute) { }
 
   ngOnInit() {
-    console.log(this.route.snapshot.queryParams);
-    console.log(this.route.snapshot.fragment);
-    console.log(this.route.snapshot);
-    console.log(this.route);
+    // console.log(this.route.snapshot.queryParams);
+    // console.log(this.route.snapshot.fragment);
+    // console.log(this.route.snapshot);
+    // console.log(this.route);
     this.server = this.serversService.getServer(1);
     this.serverName = this.server.name;
     this.serverStatus = this.server.status;
