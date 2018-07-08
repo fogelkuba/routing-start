@@ -12,6 +12,7 @@ export class EditServerComponent implements OnInit {
   server: {id: number, name: string, status: string};
   serverName = '';
   serverStatus = '';
+  allowEdit: boolean;
 
   constructor(private serversService: ServersService,
               private route: ActivatedRoute) { }
