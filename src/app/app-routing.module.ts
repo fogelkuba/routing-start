@@ -23,7 +23,7 @@ const appRoutes: Routes = [
     component: ServersComponent,
     children: [
       { path: ':id', component: ServerComponent },
-      { path: ':id/edit', component: EditServerComponent },
+      { path: ':id/edit', component: EditServerComponent, canDeactivate: [] },
     ]},
   { path: '404-not-found', component: PageNotFoundComponent},
   { path: '**', redirectTo: '/404-not-found', pathMatch: 'full'},
