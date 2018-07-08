@@ -8,7 +8,7 @@ export class AuthService {
           resolve(this.loggedIn)
         }, 800)
       }
-    )
+    );
     return promise
   }
 
